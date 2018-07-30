@@ -6,25 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  	<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   	<link rel="stylesheet" type="text/css" href="home.css">
 </head>
 <body>
 	<!--Header Code-->
 	<div class="container-fluid">
-    		<div class="row">
-        		<div style="background-color: #34495E" class="col-sm-12"><br></div>
-        	</div>
+    		
+        		<div style="background-color: #34495E" class="row"><br></div>
+        	
         	<div class="row">
-  				<div class="col-sm-1 foo">
-  					<img src="images/8.svg" id="logo" height="150px" width="150px">
-  				</div>
-  				<div class="col-sm-7 foo">
-  					<h1 id="frontheader">xyz company pvt. limited</h1>
-  				</div>
+  				  <div class="col-sm-1 foo">
+  					   <img src="images/logo2.jpg" id="logo" height="80px" width="80px">
+  				  </div>
+
+  				  <div class="col-sm-8 foo">
+  					   <h1 id="frontheader">Tycoon Seedtech Pvt. Ltd.</h1>
+  				  </div>
+            <div class="col-sm-3 foo" id="butt"> 
+                <form class="form-inline">
+                    <button class="btn btn-success custombutton" type="button">Login / SignUp</button>
+                 </form>
+            </div>
   				
-  			</div>
+  			  </div>
 	</div>
 	
 
@@ -36,6 +47,9 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" id="logo" height="32" width="32">
+    </a>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item l1 active">
         <a class="nav-link a1" href="tycoon.html">Home</a>
@@ -47,7 +61,7 @@
         <a class="nav-link a3" href="#">Products</a>
       </li>
       <li class="nav-item l4">
-        <a class="nav-link a4" href="#">Catalogue</a>
+        <a class="nav-link a4" href="#">Catalog</a>
       </li>
       <li class="nav-item l5">
         <a class="nav-link a5" href="#">Gallery</a>
@@ -92,6 +106,8 @@
   			</a>
 	</div>
 
+  <div></div>
+
 
   <!-- scroll back button -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
@@ -120,6 +136,12 @@
     			<div class="col-sm-1"></div>
     		</div>
 
+        <!--Tests-->
+        <div data-aos="fade-right"><h1>hello mausam here</h1></div>
+        
+        <div data-aos="fade-right"><h1>testing matter</h1></div>
+
+
     		<!--footer goes here-->
     		<div class="row" >
 			 	<footer class="col-sm-12">this is footer</footer>
@@ -134,6 +156,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   
   <script src="smooth-scroll.js"></script>
+
+  
   
   <script type="text/javascript">
     window.sr = ScrollReveal();
@@ -142,6 +166,12 @@
       $('.carousel').carousel({
         interval: 5000
       })
-  </script>		
+
+      AOS.init();
+  </script>
+
+
+
+  
 </body>
 </html>
